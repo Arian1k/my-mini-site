@@ -1,0 +1,352 @@
+/*  ---------------Box Sizing-----------------  */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/*  ---------------Box Sizing-----------------  */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* --------------Utility Classes ----------------*/
+
+.container{
+  width:80vw;
+  max-width:960px;
+  margin:20px auto;
+  color: white;
+  background-color: #0f0f0f;
+}
+
+.img-center{
+  display:block;
+  margin: 20px auto;
+  border:2px double #cccccc;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+.img-top{
+  display:block;
+  margin: 20px auto;
+  border: 2px double #cccccc;
+  padding: 0;
+  width: 85%;
+  height: 80%;
+}
+
+/* --------------Responsive Images ----------------*/
+img{
+  max-width:100%;
+  border: 1px solid white;
+}
+
+/*----------------Global Styles ------------------*/
+
+body{
+font-family: "Montserrat", sans-serif;
+margin:0;  
+line-height:1.5;
+background-image: url(https://images-assets.nasa.gov/image/PIA22081/PIA22081~medium.jpg);
+}
+
+header.primary{
+text-align:center;
+text-shadow: 2px 2px #000000;  
+color:#ffffff;
+/*Single value short hand*/
+padding: 40px;  
+/*long form*/
+padding-top: 40px;
+padding-right: 40px;
+padding-bottom: 40px;
+padding-left: 40px;  
+/* T,R,B,L */
+padding: 20px 40px 20px 40px;  
+/* Two Value Top/Bottom / L/R */
+padding: 20px 40px;
+}
+header.primary h1{
+font-size: 2.4rem;
+margin:20px 0 0 0;
+}
+
+header.primary h1 a{
+  color:#ffffff;
+  text-decoration:none;
+}
+
+header.primary h2{
+font-size: 2rem;
+letter-spacing:.2px;
+}
+
+header.primary a{
+  color:#ffffff;
+  padding:7.5px 7.5px;
+  border-radius:20px;
+  text-decoration:none;
+  background-color:#ffffff;
+  background-color:rgba(0,0,300,.4);
+  font-size:2rem;
+  transition:.4s;
+}
+
+header.primary a:hover{
+  background-color:rgba(5,10,100,.8);
+}
+
+header.primary nav ul{
+  padding:5px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  margin:20px 10px 10px 10px;
+}
+
+header.primary nav ul li{
+  list-style-type:none;
+}
+
+header.primary nav ul a{
+  color:#ffffff;
+  padding:7.5px 7.5px;
+  border-radius:20px;
+  text-decoration:none;
+  background-color:#ffffff;
+  background-color:rgba(0,0,300,.4);
+  font-size:1.8rem;
+  transition:.4s;
+}
+
+header.primary nav a:hover{
+  background-color:rgba(5,10,100,.8);
+}
+
+#intro h2{
+  color: #ffffff;
+  border-bottom:2px solid #ffffff;
+  text-align:center;
+}
+
+#intro{
+  border: 1px solid white;
+  padding: 10px;
+
+}
+
+#content{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:20px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border: 1px solid #ffffff;
+  padding: 40px 50px;
+  margin:30px auto 30px auto;
+}
+
+#content h2 {
+  text-align: center;
+}
+
+#content .post{
+  box-shadow: 0 4px 8px rgba(0,0,0,.7);
+  padding:20px;
+  font-size:1rem;
+ border: 1px solid #ffffff; 
+}
+
+#content .post figcaption{
+  margin:20;
+}
+
+#content time.post-date, #content figcaption{
+  text-transform:uppercase;
+  font-size:.8rem;
+}
+
+#content a{
+ color:#ffffff;
+ transition:.4s;
+}
+
+#content a:hover{
+  text-decoration:none;
+  border: 1px solid #ffffff;
+}
+
+#practice h2{
+color: #ffffff;
+}
+
+#practice a{
+  color: #ffffff;
+}
+
+#practice a:hover{
+  text-decoration:none;
+  border: 1px solid #ffffff; 
+}
+
+#practice h3{
+  border-left: 7.5px solid #5f5f5f;
+  padding:7.5px;
+  border: 10px solid #5f5f5f;
+  text-align: center;
+}
+
+#table{
+  width:100%;
+  color: #ffffff;
+   display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+#table caption{
+  font-weight:bold;
+  font-size:1.3rem;
+  margin:10px;
+  color: white;
+  
+}
+#table tr:nth-child(even){
+background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+#table td:nth-child(1n+2){
+  text-align:right;
+}
+
+
+#table th{
+color:#ffffff;
+padding:7.5px; 
+border: 1px solid white;
+}
+#table td{
+border:1px solid #ffffff;
+padding:5px;
+color:#ffffff;
+}
+
+#table ol{
+  list-style-type:lower-roman;
+}
+
+
+
+
+
+
+
+aside[role="complementary"]{
+  background-color: #2f2f2f;
+  color:#ffffff;
+  padding:20px 0;
+}
+
+aside .container h2{
+  text-align:center;
+}
+aside .container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  gap:0px;
+  text-align:left
+}
+
+aside .container a{
+  color:#ffffff;
+}
+aside .container a:hover{
+text-decoration:none;
+}
+
+aside .container a:last-child{
+  display:block;
+  text-align:right;
+  margin-top:20px;
+}
+
+aside .widget footer{
+  display:none;
+}
+
+#colophon{
+  background-color: #1f1f1f;
+  padding:5px;
+  text-align:center;
+  font-weight:bold;
+  color:#ffffff;
+}
+
+#colophon a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#colophon a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+/*  Media Queries  */
+
+@media screen and (max-width: 540px){
+
+  header.primary nav ul{
+  flex-direction:column;
+  gap:10px;  
+}
+  
+  header.primary nav ul a{
+    display:block;
+  }
+  
+  
+ .container{
+  background-color:transparent;
+  width:100%;
+  margin:20px auto;
+}
+  
+  #content{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:20px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 40px 0;
+  margin:30px auto 30px auto;
+}
+
+  
+  
+  
+}
